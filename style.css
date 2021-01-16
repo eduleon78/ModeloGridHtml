@@ -6,14 +6,70 @@
 
 body{
     background-color: lightgrey;
-    font-family: sans-serif;
+    font-family: georgia, sans-serif;
+    font-size: 1.1rem;
+    margin: auto;
 }
 
-.container{
+.header{
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.container2{
     margin: auto;
     background-color: white;
     width: 850px;
     padding: 30px;
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    letter-spacing: 10px;
+    font-size: 1.3em;
+
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: #4a4a4a;
+}
+
+.main{
+    padding-top: 15rem;
+
 }
 
 ul, li{
@@ -23,6 +79,8 @@ ul, li{
 }
 
 ul.slider{
+
+    margin: auto;
     position: relative;
     width: 800px;
     height: 300px;
@@ -196,4 +254,11 @@ ul.slider li:target{
     .content{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.footer{
+    background: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
 }
